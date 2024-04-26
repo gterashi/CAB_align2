@@ -1,5 +1,5 @@
 # CAB-align latest version
-This is the latest version of CAB-align.
+This is the latest version of CAB-align. Some bugs were fixed from the original version.
 
 Terashi, G. and Takeda-Shitaka, M., 2015. CAB-Align: A flexible protein structure alignment method based on the residue-residue contact area. PloS one, 10(10), p.e0141440.
 
