@@ -1,6 +1,7 @@
 int chkcmdline(int, char **,CMD *);
 
 int readpdb(PDB *, char *,int);//include malloc
+int MallocPdb(PDB *,int);//include malloc
 int SetCaCoords(PDB *);//include malloc
 
 void add_phipsi(PDB *);
@@ -51,18 +52,18 @@ void cp_pdb(PDB *,PDB *);
 void cp_Gri(GRID *,GRID *);
 
 
-double in_pro(double,double,double,double,double,double);/*ÆâÀÑ*/
+double in_pro(double,double,double,double,double,double);/*ï¿½ï¿½ï¿½ï¿½*/
 
 
-//void sch(PDB *,PDB *,MAT *,PDB *,CMD *);/*¥µ¡¼¥Á¥¨¥ó¥¸¥ó*/
-void sch(PDB *,PDB *,GRID *,GRID *,PDB *,CMD *);/*¥µ¡¼¥Á¥¨¥ó¥¸¥ó*/
-double sco(PDB *);/*¥¹¥³¥¢·×»»*/
-double Mcounter(PDB *,PDB *,MAT *,CMD *);/*¥Þ¥È¥ê¥¯¥¹¤«¤é¤Î¼«Í³¥¨¥Í¥ë¥®¡¼·×»»*/
+//void sch(PDB *,PDB *,MAT *,PDB *,CMD *);/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó¥¸¥ï¿½*/
+void sch(PDB *,PDB *,GRID *,GRID *,PDB *,CMD *);/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó¥¸¥ï¿½*/
+double sco(PDB *);/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×»ï¿½*/
+double Mcounter(PDB *,PDB *,MAT *,CMD *);/*ï¿½Þ¥È¥ê¥¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¼ï¿½Í³ï¿½ï¿½ï¿½Í¥ë¥®ï¿½ï¿½ï¿½×»ï¿½*/
 double Gcounter(PDB *,PDB *,GRID *,GRID *,CMD *);//get score from grid data
 
-int MVandSCORE(SCO *,PDB *,PDB *,PDB *,GRID *,GRID *,CMD *,MAT *,float,int,int,int,int,int);//°ÜÆ°¤È¥¹¥³¥¢·×»»
+int MVandSCORE(SCO *,PDB *,PDB *,PDB *,GRID *,GRID *,CMD *,MAT *,float,int,int,int,int,int);//ï¿½ï¿½Æ°ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×»ï¿½
 
-void result(PDB *,char);/*·ë²Ì*/
+void result(PDB *,char);/*ï¿½ï¿½ï¿½*/
 float vdw_aa(char *);
 
 int Main_coll_chk(PDB *,PDB *,CMD *);//collision check

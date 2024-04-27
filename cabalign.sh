@@ -31,14 +31,15 @@ if [ -z $2 ];then
 fi
 
 #Setting
-exe="./"
+exe1="./CAMTX_src"
+exe2="./CAalign_src"
 pdb1=$1
 pdb2=$2
 
 CHK_FILE "$pdb1"
 CHK_FILE "$pdb2"
-CHK_FILE "$exe/CACDMTX"
-CHK_FILE "$exe/CAalign"
+CHK_FILE "$exe1/CACDMTX"
+CHK_FILE "$exe2/CAalign"
 
 id1=`basename $pdb1 .pdb`
 id1=`basename $id1 .ent`
@@ -61,13 +62,13 @@ outfile=$wk_dir/${id1}_${id2}.align
 EXIST_CHK_FILE "$outfile"
 
 
-$exe/CACDMTX -i $pdb1 > $mtx1
-$exe/CACDMTX -i $pdb2 > $mtx2
+$exe1/CACDMTX -i $pdb1 > $mtx1
+$exe1/CACDMTX -i $pdb2 > $mtx2
 
 CHK_FILE "$mtx1"
 CHK_FILE "$mtx2"
 
-$exe/CAalign -i $mtx1 -I $mtx2 -p $pdb1 -P $pdb2 > $wk_dir/${id1}_${id2}.align
+$exe2/CAalign -i $mtx1 -I $mtx2 -p $pdb1 -P $pdb2 > $wk_dir/${id1}_${id2}.align
 cat $wk_dir/${id1}_${id2}.align
 
 

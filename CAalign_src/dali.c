@@ -8,6 +8,7 @@
 #include "struct.h"
 #include "func.h"
 #include "dali.h"
+#include "rmsd.h"
 #define DIST(a,b,c,d,e,f) sqrt((a-b)*(a-b)+(c-d)*(c-d)+(e-f)*(e-f))
 #define L(a,b,c,d,e,f) (sqrt((d-a)*(d-a)+(e-b)*(e-b)+(f-c)*(f-c)))
 #define SEP_LEN 5
@@ -69,7 +70,7 @@ int FindMaxResNum(char *filename){
   if(max<i3)
    max=i3;
  }
- close(fpin);
+ fclose(fpin);
  return (max+1);
 }
 
@@ -126,7 +127,7 @@ int ReadDmtx(DMTX *d,char *filename, bool flag){
    //d->TareaSq+=sqrt(a); nouse
   }
  }
- close(fpin);
+ fclose(fpin);
  return TRUE;
 }
 

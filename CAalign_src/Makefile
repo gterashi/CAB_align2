@@ -11,7 +11,7 @@ PG2 = shib_ANA
 PG2 = shib_A5_simple
 
 #OPT = -O3 -msse -msse2 -msse3 -mmmx -ftree-vectorize -ftree-vectorizer-verbose=3 -ffast-math -march=native -funroll-loops -fopenmp
-OPT = -O3 -msse -msse2 -msse3 -mmmx -ftree-vectorize -ftree-vectorizer-verbose=3 -ffast-math  -funroll-loops 
+OPT = -O3 -msse -msse2 -msse3 -mmmx -ftree-vectorize  -ffast-math  -funroll-loops 
 
 $(PG) : main.c $(OBJECTS) $(HEADER) $(COM)
 	$(CC) -o $(PG) main.c $(OBJECTS) -lm $(OPT) 
@@ -22,11 +22,11 @@ $(PG2) : main.c $(OBJECTS2) $(HEADER) $(COM)
 dali.o : dali.c $(HEADER) 
 	$(CC) -c dali.c $(OPT)
 
-tm.o : tm.c $(HEADER) -lm
-	$(CC) -c tm.c $(OPT)
+tm.o : tm.c $(HEADER)
+	$(CC) -c tm.c $(OPT) -lm
 
-mammoth.o : mammoth.c $(HEADER) -lm
-	$(CC) -c mammoth.c $(OPT)
+mammoth.o : mammoth.c $(HEADER)
+	$(CC) -c mammoth.c $(OPT) -lm
 
 pdbfft.o : pdbfft.c $(HEADER)
 	$(CC) -c pdbfft.c $(OPT)

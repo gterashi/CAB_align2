@@ -11,7 +11,7 @@ PG2 = shib_ANA
 PG2 = shib_A5_simple
 
 #OPT = -O3 -msse -msse2 -msse3 -mmmx -ftree-vectorize -ftree-vectorizer-verbose=3 -ffast-math -march=native -funroll-loops -fopenmp
-OPT = -O3 -msse -msse2 -msse3 -mmmx -ftree-vectorize -ftree-vectorizer-verbose=3 -ffast-math -funroll-loops 
+OPT = -O3 -msse -msse2 -msse3 -mmmx -ftree-vectorize  -ffast-math -funroll-loops 
 
 $(PG) : main.c $(OBJECTS) $(HEADER) $(COM)
 	$(CC) -o $(PG) main.c $(OBJECTS) -lm $(OPT) 

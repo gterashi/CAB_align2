@@ -16,6 +16,7 @@ Distance matrix allignment
 //#include "mc.h"
 #include "dali.h"
 #include "tm.h"
+#include "mammoth.h"
 
 #define PDB_STRLEN 55
 #define MARGIN 5.0
