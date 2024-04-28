@@ -1,11 +1,12 @@
 # CAB-align latest version
+CAB-align is a residue-residue contact area based protein structure alignment program.  
 This is the latest version of CAB-align. Some bugs were fixed from the original version.
-
+## Reference
 Terashi, G. and Takeda-Shitaka, M., 2015. CAB-Align: A flexible protein structure alignment method based on the residue-residue contact area. PloS one, 10(10), p.e0141440.
 
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141440
 
-## Set Up and Compile
+## Set Up programs and Compile
 Please compile codes in ```CAalign_src``` and ```CAMTX_src``` by  
 ```make``` command.
 
