@@ -10,6 +10,10 @@ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141440
 Please compile codes in ```CAalign_src``` and ```CAMTX_src``` by  
 ```make``` command.
 
+In cabalign.sh, please specify the directory of the codes.  
+example:  
+```BIN_DIR="/home/user1/CAB_ALIGN2"```
+
 ## Usage
 ```
 cabalign.sh [PDB1 file] [PDB2 file] 
