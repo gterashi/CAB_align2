@@ -5,6 +5,9 @@
 # CAMTX : Contact Area Caluculation
 # CAalign : generate residue-residue contact area based alignment
 
+#Please specify the directory of the CAB_ALIGN2
+BIN_DIR='./'
+
 USAGE(){
  echo -e "$0 [PDBfile1] [PDBfile2]"
  echo -e "Simple CAB-align"
@@ -31,8 +34,8 @@ if [ -z $2 ];then
 fi
 
 #Setting
-exe1="./CAMTX_src"
-exe2="./CAalign_src"
+exe1="$BIN_DIR/CAMTX_src"
+exe2="$BIN_DIR/CAalign_src"
 pdb1=$1
 pdb2=$2
 
