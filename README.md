@@ -6,7 +6,7 @@ Terashi, G. and Takeda-Shitaka, M., 2015. CAB-Align: A flexible protein structur
 
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141440
 
-## Set Up programs and Compile
+## Set Up programs and Compile codes
 Please compile codes in ```CAalign_src``` and ```CAMTX_src``` by  
 ```make``` command.
 
@@ -28,3 +28,5 @@ No1 sco= 19650.751 rate= 0.580 CAD= 0.576 Sep>4 sco= 6421.931 rate= 0.501 CAD= 0
 DTILLTGLFAAFFTTFAFAPQSIKTIRTRNTEGISVVMYIMFLTGVISWIAYGIMRSDFAVLIANIVTLFLAAPVLVITLINRRKKHVLESDTILLTGLFAAFFTTFAFAPQSIKTIRTRNTEGISVVMYIMFLTGVISWIAYGIMRSDFAVLIANIVTLFLAAPVLVITLINRRKKHVLESSMDTILLTGLFAAFFTTFAFAPQSIKTIRTRNTEGISVVMYIMFLTGVISWIAYGIMRSDFAVLIANIVTLFLAAPVLVITLINRRKKHVLESMDTILLTGLFAAFFTTFAFAPQSIKTIRTRNTEGISVVMYIMFLTGVISWIAYGIMRSDFAVLIANIVTLFLAAPVLVITLINRRKKHVLE---
 #FINISHED TOTAL TIME= 1.349745
 ```
+
+- ```SupRec= 26.214``` is the normalized similarity score. It is normalized by the size of the internal residue-residue contact area and the contact area based similarity between the two input models.
